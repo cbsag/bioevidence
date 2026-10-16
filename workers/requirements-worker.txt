@@ -1,0 +1,7 @@
+pyserini==1.2.0
+# Pyserini 1.2 eagerly constructs its optional client with an empty key;
+# OpenAI Python 3 rejects that during import even when the encoder is unused.
+openai>=1.0,<2
+sentence-transformers>=5.0,<6
+torch>=2.7,<3
+transformers>=4.52,<5
